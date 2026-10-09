@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Photo Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/gallery.js" defer></script>
+</head>
+<body onload="addTabFocus()">
+
+    <h1>Interactive Accessible Photo Gallery</h1>
+
+    <!-- Khung hiển thị ảnh lớn & tiêu đề ảnh -->
+    <div id="image">
+        Hover or tab over an image below to display here.
+    </div>
+
+    <!-- Thư viện 6 ảnh xem trước -->
+    <div class="gallery">
+        <img class="preview" 
+             alt="Stylized landscape with mountains" 
+             src="https://picsum.photos/id/1018/600/400" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             alt="Serene lake surrounded by trees" 
+             src="https://picsum.photos/id/1015/600/400" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             alt="Foggy forest pathway in autumn" 
+             src="https://picsum.photos/id/1043/600/400" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             alt="Scenic ocean view at sunset" 
+             src="https://picsum.photos/id/1002/600/400" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             alt="Majestic mountain peak covered in snow" 
+             src="https://picsum.photos/id/1036/600/400" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+
+        <img class="preview" 
+             alt="Peaceful beach with calm blue water" 
+             src="https://picsum.photos/id/1050/600/400" 
+             onmouseover="upDate(this)" 
+             onmouseleave="unDo()" 
+             onfocus="upDate(this)" 
+             onblur="unDo()">
+    </div>
+
+</body>
+</html>
