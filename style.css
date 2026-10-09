@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Khung hiển thị ảnh lớn */
+#image {
+    line-height: 300px;
+    height: 300px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    border: 3px solid #2c3e50;
+    border-radius: 8px;
+    background-color: #8e44ad;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Bố cục thư viện ảnh */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Ảnh xem trước */
+.preview {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #bdc3c7;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Hiệu ứng khi rê chuột hoặc dùng phím Tab focus vào ảnh */
+.preview:hover,
+.preview:focus {
+    transform: scale(1.05);
+    border-color: #3498db;
+    outline: 3px solid #f39c12;
+}
